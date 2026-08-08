@@ -22,6 +22,14 @@ allprojects {
         google()
         mavenCentral()
     }
+
+    // Modern Gradle 8.11+ solution to dynamically intercept and swap duplicate modules
+    configurations.configureEach {
+        resolutionStrategy.dependencySubstitution {
+            substitute module('org.jetbrains.kotlin:kotlin-stdlib-jdk7') using module('org.jetbrains.kotlin:kotlin-stdlib:1.8.22')
+            substitute module('org.jetbrains.kotlin:kotlin-stdlib-jdk8') using module('org.jetbrains.kotlin:kotlin-stdlib:1.8.22')
+        }
+    }
 }
 
 task clean(type: Delete) {
