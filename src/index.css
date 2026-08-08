@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+
+* { font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif; }
+h1,h2,h3,.serif { font-family: "Fraunces", serif; }
+
+:root {
+  --cream: #FFFBF2;
+  --cream-2: #FFF7EB;
+  --card: #FFFFFF;
+  --border: #F0E6D8;
+  --lime: #BAE65A;
+  --lime-strong: #A6DC35;
+  --lime-light: #E9F8C9;
+  --yellow: #FFDE7A;
+  --yellow-dark: #FFD44D;
+  --ink: #1A1A1A;
+  --muted: #9C9082;
+  --green-check: #7ED321;
+}
+
+body { background: #EFE9E0; margin:0; }
+::-webkit-scrollbar { display:none; }
+.no-scrollbar { -ms-overflow-style:none; scrollbar-width:none; }
+
+.ruler-mark { background: #D9D0C4; }
