@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PlatePal</string>
+    <string name="title_activity_main">PlatePal</string>
+    <string name="package_name">com.platepal.app</string>
+    <string name="custom_url_scheme">com.platepal.app</string>
+</resources>
